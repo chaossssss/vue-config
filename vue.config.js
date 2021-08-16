@@ -98,7 +98,7 @@ module.exports = {
         analyzerPort: 8689,
         reportFilename: 'report.html',
         defaultSizes: 'parsed',
-        openAnalyzer: true,
+        openAnalyzer: false,
         generateStatsFile: false,
         statsFilename: 'stats.json',
         statsOptions: null,
