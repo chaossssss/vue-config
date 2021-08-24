@@ -21,10 +21,10 @@ function resolve(dir) {
 const cdn = {
   css: [],
   js: [
-      'https://cdn.bootcss.com/vue/2.6.11/vue.runtime.min.js',
-      'https://cdn.bootcss.com/vue-router/3.2.0/vue-router.min.js',
-      'https://cdn.bootcss.com/vuex/3.4.0/vuex.min.js',
-      'https://cdn.bootcss.com/axios/0.21.1/axios.min.js',
+      'http://cdn.bootcss.com/vue/2.6.11/vue.min.js',
+      'http://cdn.bootcss.com/vue-router/3.2.0/vue-router.min.js',
+      'http://cdn.bootcss.com/vuex/3.2.0/vuex.min.js',
+      'http://cdn.bootcss.com/axios/0.21.1/axios.min.js',
   ]
 }
 module.exports = {
@@ -55,6 +55,7 @@ module.exports = {
     }
   },
   configureWebpack: config => {
+    // 过大设置
     config.externals = { 
       AMap: 'AMap',
       vue: 'Vue',
